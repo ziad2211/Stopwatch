@@ -1,4 +1,4 @@
-23:12:24 **** Incremental Build of configuration Debug for project MiniProject2_Stopwatch_WS ****
+20:30:27 **** Incremental Build of configuration Debug for project MiniProject2_Stopwatch_WS ****
 make all 
 Building file: ../main.c
 Invoking: AVR Compiler
@@ -12,14 +12,14 @@ Invoking: AVR Compiler
 avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"stopwatch.d" -MT"stopwatch.o" -c -o "stopwatch.o" "../stopwatch.c"
 Finished building: ../stopwatch.c
  
-Building file: ../stopwatch_PBcfg.c
+Building file: ../timers.c
 Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"stopwatch_PBcfg.d" -MT"stopwatch_PBcfg.o" -c -o "stopwatch_PBcfg.o" "../stopwatch_PBcfg.c"
-Finished building: ../stopwatch_PBcfg.c
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"timers.d" -MT"timers.o" -c -o "timers.o" "../timers.c"
+Finished building: ../timers.c
  
 Building target: MiniProject2_Stopwatch_WS.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,MiniProject2_Stopwatch_WS.map -mmcu=atmega16 -o "MiniProject2_Stopwatch_WS.elf"  ./main.o ./stopwatch.o ./stopwatch_PBcfg.o ./timers.o   
+avr-gcc -Wl,-Map,MiniProject2_Stopwatch_WS.map -mmcu=atmega16 -o "MiniProject2_Stopwatch_WS.elf"  ./main.o ./stopwatch.o ./timers.o   
 Finished building target: MiniProject2_Stopwatch_WS.elf
  
 Invoking: AVR Create Extended Listing
@@ -42,5 +42,5 @@ Data:         17 bytes (1.7% Full)
 Finished building: sizedummy
  
 
-23:12:25 Build Finished. 0 errors, 1 warnings. (took 1s.96ms)
+20:30:30 Build Finished. 0 errors, 1 warnings. (took 3s.28ms)
 

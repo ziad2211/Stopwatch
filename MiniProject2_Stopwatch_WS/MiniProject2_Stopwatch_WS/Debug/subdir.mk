@@ -6,19 +6,16 @@
 C_SRCS += \
 ../main.c \
 ../stopwatch.c \
-../stopwatch_PBcfg.c \
 ../timers.c 
 
 OBJS += \
 ./main.o \
 ./stopwatch.o \
-./stopwatch_PBcfg.o \
 ./timers.o 
 
 C_DEPS += \
 ./main.d \
 ./stopwatch.d \
-./stopwatch_PBcfg.d \
 ./timers.d 
 
 
