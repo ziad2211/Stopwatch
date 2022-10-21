@@ -1,0 +1,14 @@
+/*
+ * stopwatch_cfg.h
+ *
+ *  Created on: May 3, 2022
+ *      Author: Ziad Abdallah
+ */
+
+#ifndef STOPWATCH_CFG_H_
+#define STOPWATCH_CFG_H_
+
+#define		DECODER_ID		7447 		/* the decoder used is 7447 (common anode) */
+
+
+#endif /* STOPWATCH_CFG_H_ */

@@ -1,0 +1,21 @@
+/*
+ * stopwatch_cfg.h
+ *
+ *  Created on: May 3, 2022
+ *      Author: Ziad Abdallah
+ */
+
+#ifndef STOPWATCH_CFG_H_
+#define STOPWATCH_CFG_H_
+
+#define		ANODE						(1u)
+#define		CATHODE						(0u)
+#define		SEVEN_SEG_PORT_NUM			'A'					/* 7-segment  pins connected to Port A*/
+#define		SEVEN_SEG_MASK_ENABLE		(uint8_t)0x1F		/* Mask for 7-segment enable pins (PA0-PA5)*/
+#define		SEVEN_SEG_TYPE				ANODE 				/* Type of 7-segment is common anode */
+
+#define		BCD_PORT_NUM				'C'					/* BCD pins connected to Port C*/
+#define 	BCD_MASK					(uint8_t)0x0F		/* Mask  for BCD output pins*/
+
+
+#endif /* STOPWATCH_CFG_H_ */

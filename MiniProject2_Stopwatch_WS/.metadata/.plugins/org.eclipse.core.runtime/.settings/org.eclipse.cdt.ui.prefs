@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+inactiveCodeColor=128,128,128
+inactiveCodeEnable=false
+markOccurrences=false
+org.eclipse.cdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="false" context\="org.eclipse.cdt.core.cSource.contenttype_context" deleted\="false" description\="Default template for newly created C source files" enabled\="true" id\="org.eclipse.cdt.ui.text.codetemplates.csourcefile" name\="Default C source template">${filecomment}\r\n${includes}\r\n\r\n${declarations}\r\n\#include &lt;avr/io.h&gt;\r\n\r\n\r\nint main(void){\r\n\t/* Initialization Code */\r\n\r\n\t\t\r\n\r\n\twhile(1)\r\n\t{\r\n\t\t/* Application Code */\r\n\t\t\r\n\t\t\r\n\t}\t\r\n\r\n\treturn 0;\r\n}</template></templates>
+sourceHoverBackgroundColor=47,47,47
+spelling_locale_initialized=true
+spelling_user_dictionary_encoding=
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

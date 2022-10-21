@@ -1,0 +1,25 @@
+/*
+ * timers.c
+ *
+ *  Created on: May 4, 2022
+ *      Author: Ziad Abdallah
+ */
+
+
+#include "timers.h"
+
+void Timer1_Init(uint16 Top_Value, uint8 Enable_Interrupt)
+{
+	/*Configure TCCR1A Register
+	 * Non PWM mode: COM1A1 = 0, COM1A0 = 0, COM1B1 = 0, COM1B0 = 0
+	 * FOC1A = 0, FOC1B = 0
+	 * Configure as CTC mode: WGM13 = 0, WGM12 = 1, WGM11 = 0, WGM10 = 0
+	 */
+	TCCR1A = (1<<WGM12);
+
+	/*Configure TCCR1B Register
+	 * Configure as CTC mode: WGM13 = 0
+	 *
+	 * */
+
+}

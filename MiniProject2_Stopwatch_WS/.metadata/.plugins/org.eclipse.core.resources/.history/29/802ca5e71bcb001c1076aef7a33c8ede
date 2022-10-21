@@ -1,0 +1,32 @@
+/*
+ * stopwatch.h
+ *
+ *  Created on: May 3, 2022
+ *      Author: Ziad Abdallah
+ */
+
+#ifndef STOPWATCH_H_
+#define STOPWATCH_H_
+
+*******************************************************************************
+ *                      Function Prototypes                                    *
+ *******************************************************************************/
+
+/************************************************************************************
+* Service Name: Port_Init
+* Service ID: 0x00
+* Sync/Async: Synchronous
+* Reentrancy: Non Reentrant
+* Parameters (in): ConfigPtr - Pointer to post-build configuration data
+* Parameters (inout): None
+* Parameters (out): None
+* Return value: None
+* Description: Initializes the Port Driver module.:
+*              - Setup the pin mode
+*              - Setup the pin direction
+*              - Setup the pin initial level
+*              - Setup the pin internal resistor
+************************************************************************************/
+void SevenSegment_Init(void);
+
+#endif /* STOPWATCH_H_ */

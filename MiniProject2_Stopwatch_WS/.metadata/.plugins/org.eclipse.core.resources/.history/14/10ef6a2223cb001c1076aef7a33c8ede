@@ -1,0 +1,16 @@
+/*
+ * stopwatch_cfg.h
+ *
+ *  Created on: May 3, 2022
+ *      Author: Ziad Abdallah
+ */
+
+#ifndef STOPWATCH_CFG_H_
+#define STOPWATCH_CFG_H_
+
+#define		BCD_TYPE			ANODE 		/* Type of BCD is common anode */
+#define		BCD_PORT_NUM		PORTC		/* BCD pins connected to Port C*/
+#define		BCD_MASK			0xF0		/* Mask for BCD pin numbers (PC0-PC3) */
+
+
+#endif /* STOPWATCH_CFG_H_ */

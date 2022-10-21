@@ -1,0 +1,43 @@
+/*
+ * main.c
+ *
+ *  Created on: May 3, 2022
+ *      Author: Ziad Abdallah
+ *     Project: MiniProject2_Stopwatch_WS
+ *		  File: main file
+ */
+
+
+#include <avr/io.h>
+#include <util/delay.h>
+#include <avr/interrupt.h>
+#include "stopwatch.h"
+
+
+
+int main(void){
+	/* Initialization Code */
+SevenSegment_Init();
+		
+
+	while(1)
+	{
+		/* Application Code */
+		SevenSegment_Display(SEC_U, sec_units_num);
+		_delay_us(DP_DELAY);
+		SevenSegment_Display(SEC_T, sec_tens_num);
+		_delay_us(DP_DELAY);
+		SevenSegment_Display(MIN_U, min_units_num);
+		_delay_us(DP_DELAY);
+		SevenSegment_Display(MIN_T, min_tens_num);
+		_delay_us(DP_DELAY);
+		SevenSegment_Display(HOUR_U, hour_units_num);
+		_delay_us(DP_DELAY);
+		SevenSegment_Display(HOUR_T, hour_tens_num);
+		_delay_us(DP_DELAY);
+		
+		
+	}	
+
+	return 0;
+}

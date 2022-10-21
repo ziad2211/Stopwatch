@@ -1,0 +1,17 @@
+/*
+ * timers.h
+ *
+ *  Created on: May 4, 2022
+ *      Author: Ziad Abdallah
+ */
+
+#ifndef TIMERS_H_
+#define TIMERS_H_
+
+#include "STD_TYPES.h"
+#include <avr/io.h>
+
+#define TIMER1_START(PRESCALER)		(TC)
+void Timer1_Init(uint16 Top_Value, uint8 Enable_Interrupt);
+
+#endif /* TIMERS_H_ */

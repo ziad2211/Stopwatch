@@ -1,0 +1,43 @@
+23:12:24 **** Incremental Build of configuration Debug for project MiniProject2_Stopwatch_WS ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../stopwatch.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"stopwatch.d" -MT"stopwatch.o" -c -o "stopwatch.o" "../stopwatch.c"
+Finished building: ../stopwatch.c
+ 
+Building file: ../stopwatch_PBcfg.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"stopwatch_PBcfg.d" -MT"stopwatch_PBcfg.o" -c -o "stopwatch_PBcfg.o" "../stopwatch_PBcfg.c"
+Finished building: ../stopwatch_PBcfg.c
+ 
+Building target: MiniProject2_Stopwatch_WS.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MiniProject2_Stopwatch_WS.map -mmcu=atmega16 -o "MiniProject2_Stopwatch_WS.elf"  ./main.o ./stopwatch.o ./stopwatch_PBcfg.o ./timers.o   
+Finished building target: MiniProject2_Stopwatch_WS.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MiniProject2_Stopwatch_WS.elf  >"MiniProject2_Stopwatch_WS.lss"
+Finished building: MiniProject2_Stopwatch_WS.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 MiniProject2_Stopwatch_WS.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7564 bytes (46.2% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (1.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

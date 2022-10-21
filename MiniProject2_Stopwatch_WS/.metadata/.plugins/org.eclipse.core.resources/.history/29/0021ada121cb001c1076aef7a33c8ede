@@ -1,0 +1,18 @@
+/*
+ * stopwatch_PBcfg.c
+ *
+ *  Created on: May 3, 2022
+ *      Author: Ziad Abdallah
+ */
+
+
+#include "stopwatch.h"
+#include "avr/io.h"
+
+/* Configure the pins connected to 7-segment BCD
+ * decoder_A connected to PC0
+ * decoder_B connected to PC1
+ * decoder_C connected to PC2
+ * decoder_D connected to PC3
+ * */
+const SevenSegment_ConfigType SevenSegment_ConfigPin = {PC0,PC1,PC2,PC3};

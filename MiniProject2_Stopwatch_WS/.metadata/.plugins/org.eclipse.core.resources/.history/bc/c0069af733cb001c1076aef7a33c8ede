@@ -1,0 +1,25 @@
+/*
+ * timers.c
+ *
+ *  Created on: May 4, 2022
+ *      Author: Ziad Abdallah
+ */
+
+
+#include <avr/io.h>
+
+
+int main(void){
+	/* Initialization Code */
+
+		
+
+	while(1)
+	{
+		/* Application Code */
+		
+		
+	}	
+
+	return 0;
+}

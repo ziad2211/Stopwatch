@@ -1,0 +1,63 @@
+/*
+ * stopwatch.c
+ *
+ *  Created on: May 3, 2022
+ *      Author: Ziad Abdallah
+ */
+
+
+#include "stopwatch.h"
+
+void SevenSegment_Init(uint8_t SevenSeg_Mask,\
+					   uint8_t BCD_Mask)
+{
+	/* Configure the pins for common anode 7-segment BCD */
+
+	/* Configure 7-segment pins as outputs*/
+
+#if  (SEVEN_SEG_PORT_NUM == 'A')
+	DDRA |= SevenSeg_Mask;
+
+#elif (SEVEN_SEG_PORT_NUM == 'B')
+	DDRB |= SevenSeg_Mask;
+
+#elif (SEVEN_SEG_PORT_NUM == 'C')
+	DDRC |= SevenSeg_Mask;
+
+#elif (SEVEN_SEG_PORT_NUM == 'D')
+	DDRD |= SevenSeg_Mask;
+
+#elif (SEVEN_SEG_PORT_NUM == 'E')
+	DDRE |= SevenSeg_Mask;
+
+#else
+	/* no action required */
+#endif
+
+	/* Configure BCD pins as outputs
+	 * Initialize first number by zero */
+
+#if  (BCD_PORT_NUM == 'A')
+	DDRA |= BCD_Mask;
+	PORTC &= ~(BCD_Mask);
+
+#elif (BCD_PORT_NUM == 'B')
+	DDRB |= BCD_Mask;
+	PORTB &= ~(BCD_Mask);
+
+#elif (BCD_PORT_NUM == 'C')
+	DDRC |= BCD_Mask;
+	PORTC &= ~(BCD_Mask);
+
+#elif (BCD_PORT_NUM == 'D')
+	DDRD |= BCD_Mask;
+
+#elif (BCD_PORT_NUM == 'E')
+	DDRE |= BCD_Mask;
+
+#else
+	/* no action required */
+#endif
+
+	return;
+}
